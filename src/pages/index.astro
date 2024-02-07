@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro'
+import theme from '../../../src/theme'
+
+const { animation } = theme
+---
+
+<Layout title='Welcome to Astro.'>
+  <main>
+    <header
+      class='max-w-4xl mx-auto flex justify-center items-center py-10 flex-col'
+    >
+      <h1 class='font-semibold text-4xl pt-10'>Animate Wind</h1>
+      <h2 class='font-medium opacity-80'>
+        Plug in the animations on your tailwind project
+      </h2>
+
+      <div class='mt-10'>
+        <code>npm install @louie-dev/animate-wind</code>
+      </div>
+    </header>
+
+    <section class='grid max-w-4xl mx-auto grid-cols-5 gap-4'>
+      {
+        Object.keys(animation).map((animationKey) => {
+          return (
+            <article
+              class='col-span-1 animate-duration-1000 border rounded border-neutral-200 hover:border-neutral-800 hover:shadow-md transition-all cursor-crosshair duration-300'
+              data-class={animationKey}>
+              <div class='p-4 flex flex-col justify-center items-center w-full h-full gap-4'>
+                <span class='w-16 h-16 bg-neutral-300 rounded-xl flex items-center justify-center' />
+                <h3 class='text-xs font-semibold opacity-80'>{animationKey}</h3>
+              </div>
+            </article>
+          )
+        })
+      }
+    </section>
+  </main>
+</Layout>
+
+<script>
+  const $articles = document.querySelectorAll('article')
+  $articles.forEach((article) => {
+    const classKey = article.getAttribute('data-class')
+    const animationClass = `animate-${classKey}`
+    const $box = article.querySelector('span')
+    if ($box == null) return
+    article.addEventListener('mouseenter', () => {
+      $box.classList.add(animationClass)
+    })
+    article.addEventListener('mouseleave', () => {
+      $box.classList.remove(animationClass)
+    })
+  })
+</script>
