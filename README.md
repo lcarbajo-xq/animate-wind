@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# Animate Wind - Plug in your Tailwind CSS animations
 
 ```sh
 npm create astro@latest -- --template basics
