@@ -1,54 +1,101 @@
-# Animate Wind - Plug in your Tailwind CSS animations
+# Animate Wind 🌪️
 
-```sh
-npm create astro@latest -- --template basics
+**Plug in your Tailwind CSS animations** - A modern web application built with Astro and Tailwind CSS for showcasing beautiful animations and interactive components.
+
+## ✨ Features
+
+- 🎨 **Custom Tailwind CSS Animations** - Explore various animation patterns and effects
+- ⚡ **Astro Framework** - Built with Astro for optimal performance and developer experience
+- 🎯 **TypeScript Support** - Full TypeScript integration for type safety
+- 📱 **Responsive Design** - Mobile-first approach with Tailwind CSS
+- 🚀 **Fast Loading** - Optimized build process with Astro's static site generation
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, or pnpm
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/lcarbajo-xq/animate-wind.git
+
+# Navigate to project directory
+cd animate-wind
+
+# Install dependencies
+npm install
+# or
+pnpm install
+# or
+yarn install
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### Development
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+```bash
+# Start development server
+npm run dev
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+# The application will be available at http://localhost:4321
+```
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
+## 📁 Project Structure
 
 ```text
-/
-├── public/
+animate-wind/
+├── public/                 # Static assets
 │   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+├── src/                   # Source code
+│   ├── components/        # Reusable Astro components
+│   ├── layouts/          # Layout components
+│   ├── pages/            # Application pages
+│   └── env.d.ts          # TypeScript environment definitions
+├── astro.config.mjs      # Astro configuration
+├── tailwind.config.mjs   # Tailwind CSS configuration
+├── tsconfig.json         # TypeScript configuration
+└── package.json          # Project dependencies and scripts
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🛠️ Available Scripts
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| Command | Action |
+|---------|--------|
+| `npm run dev` | Start development server at `localhost:4321` |
+| `npm run build` | Build production site to `./dist/` |
+| `npm run preview` | Preview production build locally |
+| `npm run astro` | Run Astro CLI commands |
+| `npm run astro -- --help` | Get help with Astro CLI |
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🎨 Tech Stack
 
-## 🧞 Commands
+- **[Astro](https://astro.build/)** - Static site generator
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript
 
-All commands are run from the root of the project, from a terminal:
+## 🤝 Contributing
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Contributions are welcome! Here's how you can help:
 
-## 👀 Want to learn more?
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-animation`)
+3. Commit your changes (`git commit -m 'Add amazing animation'`)
+4. Push to the branch (`git push origin feature/amazing-animation`)
+5. Open a Pull Request
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🔗 Links
+
+- [Astro Documentation](https://docs.astro.build)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [TypeScript Documentation](https://www.typescriptlang.org/docs)
+
+---
+
+Built with ❤️ using Astro and Tailwind CSS
